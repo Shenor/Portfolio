@@ -20,41 +20,15 @@
   <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
-  </script>
+
 </head>
 <body>
   <header>
     <div class="container header">
 
-      <button class="burger" onclick="myFunction(this, '.burger-menu')">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div class="burger-menu">
-          <ul class="burger-list">
-            <li class="burger-item"><a href="#" tabindex="0">О нас</a></li>
-            <li class="burger-item"><a href="#" tabindex="0">Проекты</a></li>
-            <li class="burger-item"><a href="#" tabindex="0">Этапы</a></li>
-            <li class="burger-item"><a href="#" tabindex="0">Отзывы</a></li>
-            <li class="burger-item"><a href="#" tabindex="0">Контакты</a></li>
-          </ul>
-        </div>
+      <button class="burger">
+        <span></span>
       </button>
-
-
-
-      <script>
-      function myFunction(x, y) {
-        x.classList.toggle("change");
-        let burgerActive = document.querySelector(y)
-        burgerActive.classList.toggle("burger-active");
-      }
-      </script>
-
       <img class="header-logo" src="img/Логотип-1.png" alt="logo" aria-label="Логотип">
       <nav class="header-nav">
         <ul class="header-list">
@@ -82,7 +56,6 @@
       <div class="hero swiper-slide slide-3">
       </div>
     </div>
-      <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
   </section>
   <section class="aboutUs container">
@@ -126,10 +99,10 @@
        <div class="tab-content tab-content-active" data-target="one">
         <p class="work-text"><strong>Проводим консультацию</strong><br>
           Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-          <picture>
+          <picture class="work-img">
             <source media="(max-width: 768px)" srcset="img/advice768.jpg">
             <source media="(max-width: 1024px)" srcset="img/advice2.jpg">
-            <img class="work-img" src="img/advice.jpg" alt="">
+            <img  src="img/advice.jpg" alt="">
           </picture>
        </div>
        <div class="tab-content" data-target="two">
@@ -216,30 +189,6 @@
 
     </section>
   </footer>
-
-
-
-
-  <script>
-    var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    })
-
-  </script>
-  <script src="tabs.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
