@@ -380,7 +380,7 @@ section {
 }
 .gallery__content {
   display: flex;
-  align-items: flex-start;
+
 }
 .gallery__title {
   display: inline-block;
@@ -388,7 +388,7 @@ section {
 }
 .gallery__filter {
   width: 400px;
-  height: 100%;
+  height: inherit;
   display: flex;
   margin-right: 5.4%;
   flex-direction: column;
@@ -511,6 +511,7 @@ section {
 .swiper-container__btn,
 .swiper-container__editions {
   width: 1150px;
+  height: 810px;
   overflow: hidden;
 }
 .swiper-container__btn {
@@ -1662,7 +1663,7 @@ section {
     line-height: 28px;
   }
   .gallery {
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     height: auto;
   }
   .filter__title {
@@ -1673,12 +1674,16 @@ section {
   .gallery__filter {
     width: 290px;
   }
+  .gallery__desc {
+    font-size: 16px;
+  }
   .swiper-container__btn {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     height: 437px;
     padding-top: 18px;
+    margin-bottom: 19px;
   }
   .slide-img {
     height: auto;
@@ -1745,6 +1750,7 @@ section {
   }
   .events__swiper-container {
     margin: 0;
+    overflow: hidden;
   }
   .card-events__content {
     padding: 12px 12px 51px 26px;
