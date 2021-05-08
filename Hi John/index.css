@@ -330,6 +330,10 @@ body._lock {
     .block {
         flex-wrap: wrap;
     }
+    .block__link {
+        display: block;
+        width: 100%;
+    }
     .block__img {
         margin-bottom: 23px;
         width: 100%;
