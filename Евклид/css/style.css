@@ -90,6 +90,7 @@ picture > * {
 }
 .burger {
   display: none;
+  width: 30px;
   height: 30px;
   position: relative;
   cursor: pointer;
@@ -141,7 +142,7 @@ header {
 .header-list {
   display: flex;
 }
-.header-item a {
+.header-link {
   font-weight: 600;
   padding-top: 3px;
   border-bottom: 3px solid;
@@ -150,10 +151,10 @@ header {
 .header-item:not(:last-child) {
   margin-right: 85px;
 }
-.header-item a:hover {
+.header-link:hover {
   border-color: #FF9900;
 }
-.header-item a:active {
+.header-link:active {
   color: #E1670E;
   border-color: #E1670E;
 }
@@ -183,14 +184,14 @@ header {
   background-repeat: no-repeat;
 }
 .slide-1 {
-  background-image: url(../img/Карусель/Карусель-1.jpg);
+  background-image: url(../img/Карусель/1.webp);
 
 }
 .slide-2 {
-  background-image: url(../img/Карусель/Карусель-2.jpg);
+  background-image: url(../img/Карусель/2.webp);
 }
 .slide-3 {
-  background-image: url(../img/Карусель/Карусель-3.jpg);
+  background-image: url(../img/Карусель/3.webp);
 }
 .hero-absolut {
   position: absolute;
@@ -363,7 +364,7 @@ header {
   margin-top: -1px;
   border-top: 1px solid #CACACA;
   border-bottom: 1px solid #CACACA;
-  white-space: nowrap;
+  white-space: pre-wrap;
 }
 .ui-icon {
   display: none !important;
@@ -724,7 +725,9 @@ footer {
     font-size: 18px;
     line-height: 22px;
   }
-
+  .burger {
+    right: 20px;
+  }
   .header {
     height: 45px;
   }
